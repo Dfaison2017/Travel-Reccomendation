@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    background-image:url(https://images.unsplash.com/photo-1546099969-7383ab0f676f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.airplane{
+    color: white;
+    width: 70px;
+    height: 70px;
+}
+
+/*Navigation buttons*/
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+
+/*Buttons*/
+.navigation .btn{
+    width: 90px;
+    height: 30px;
+    color: black;
+    background: greenyellow;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    box-shadow: 1px 5px darkgreen;
+
+}
+.navigation .btn:hover{
+    background: rgb(213, 255, 149);
+}
+
+
+.navigation .btn:active{
+    transform: translateY(4px);
+    box-shadow: 1px 2px darkgreen;
+
+}
+/*Search*/
+.searchBar{
+    background: white;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+/*BODY CONTENT*/
+.bodyContainer{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    margin-left: 70px;
+    padding: 50px;
+    background-image: url();
+}
+
+h3{
+    color: white;
+}
